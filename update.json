@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "modId": "fishon-catch-collector",
+  "channels": {
+    "stable": {
+      "1.21.11": {
+        "version": "0.4.2",
+        "releaseUrl": "https://github.com/finalpantasy/fishon-catch-collector/releases/tag/v0.4.2"
+      }
+    }
+  }
+}

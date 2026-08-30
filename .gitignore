@@ -1,0 +1,10 @@
+.gradle/
+build/
+out/
+run/
+.idea/
+*.iml
+*.log
+hs_err_pid*
+catches.jsonl
+update-cache.properties
