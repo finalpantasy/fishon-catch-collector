@@ -40,6 +40,17 @@ final class PublicReleaseContractTest {
     }
 
     @Test
+    void buildUsesOnlyTheFabricApiModulesTheCollectorImports() throws Exception {
+        String build = Files.readString(Path.of("build.gradle"));
+
+        assertFalse(build.contains("net.fabricmc.fabric-api:fabric-api:"));
+        assertTrue(build.contains("fabric-item-api-v1"));
+        assertTrue(build.contains("fabric-lifecycle-events-v1"));
+        assertTrue(build.contains("fabric-networking-api-v1"));
+        assertTrue(build.contains("fabric-rendering-v1"));
+    }
+
+    @Test
     void publicTextDoesNotContainMachineSpecificOrCredentialMaterial() throws Exception {
         String readme = Files.readString(Path.of("README.md"));
         String changelog = Files.readString(Path.of("CHANGELOG.md"));
