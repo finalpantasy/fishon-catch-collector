@@ -42,12 +42,14 @@ final class PublicReleaseContractTest {
     @Test
     void buildUsesOnlyTheFabricApiModulesTheCollectorImports() throws Exception {
         String build = Files.readString(Path.of("build.gradle"));
+        String properties = Files.readString(Path.of("gradle.properties"));
 
         assertFalse(build.contains("net.fabricmc.fabric-api:fabric-api:"));
         assertTrue(build.contains("fabric-item-api-v1"));
         assertTrue(build.contains("fabric-lifecycle-events-v1"));
         assertTrue(build.contains("fabric-networking-api-v1"));
         assertTrue(build.contains("fabric-rendering-v1"));
+        assertTrue(properties.contains("org.gradle.parallel=false"));
     }
 
     @Test
