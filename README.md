@@ -1,5 +1,7 @@
 # FishOn Catch Collector
 
+[![Support me on Ko-fi](https://img.shields.io/badge/Ko--fi-buy%20me%20a%20coffee-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/finalpantasy)
+
 FishOn Catch Collector is an **unofficial, client-only** Fabric mod for Minecraft 1.21.11. It records
 your own FishOnMC catches to a private local ledger, adds personal catchbook information to FishOn fish
 tooltips, and provides a compact fishing-statistics HUD.
@@ -185,3 +187,7 @@ automated verification. Complete source is published for players and server staf
 ## License
 
 FishOn Catch Collector is available under the [MIT License](LICENSE).
+
+## Support
+
+Free hobby project. If it helps you, you can [buy me a coffee on Ko-fi](https://ko-fi.com/finalpantasy). Thank you!
